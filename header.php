@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php bloginfo('name'); ?></title>
 	<link href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.min.css" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
-	<?php wp_head(); ?>
+	<?php
+	wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css');
+	wp_enqueue_script('jquery');
+	wp_enqueue_script('bistro-calme-main', get_template_directory_uri() . '/assets/js/main.js');
+	wp_head();
+	?>
 </head>
 
 <body <?php body_class(); ?>>

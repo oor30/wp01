@@ -10,7 +10,7 @@
 <section class="sec">
 	<div class="container">
 		<header class="sec_header">
-			<h2 class="title">最新情報<span>NEWSaaa</span></h2>
+			<h2 class="title">最新情報<span>NEWSaaaaaa</span></h2>
 		</header>
 
 		<div class="row">

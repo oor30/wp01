@@ -56,3 +56,14 @@ function my_pre_get_posts($query)
 		return;
 	}
 }
+
+/**
+ * 特定のページでは自動整形機能を停止する
+ */
+add_action('wp', 'my_wpautop');
+function my_wpautop()
+{
+	if (is_page('contact')) {
+		remove_filter('the_content', 'wpautop');
+	}
+}

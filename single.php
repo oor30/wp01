@@ -23,6 +23,8 @@
 								<div class="content">
 									<?php the_content(); ?>
 								</div>
+
+								<?php comments_template(); ?>
 							</div>
 
 							<div class="postLinks">
